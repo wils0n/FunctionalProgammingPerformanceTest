@@ -19,8 +19,7 @@ class TestFunctionalityProgrammingPerformanceTests: XCTestCase {
        ]
    }
 
-    func testLoopToMapPerformance() {
-        // This is an example of a performance test case.
+    func testLoopformance() {
         var newNumbers = [Int]()
         self.measure {
             for number in input {
@@ -31,8 +30,7 @@ class TestFunctionalityProgrammingPerformanceTests: XCTestCase {
         }
     }
 
-    func testPerformanceMap() {
-        // This is an example of a performance test case.
+    func testMapPerformance() {
         self.measure {
             let newNumbers = input.map(square)
             print(newNumbers)

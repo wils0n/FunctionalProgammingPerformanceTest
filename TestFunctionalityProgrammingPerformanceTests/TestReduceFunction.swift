@@ -19,8 +19,7 @@ class TestReduceFunction: XCTestCase {
         ]
     }
     
-    func testLoopToReducePerformance () {
-        // This is an example of a performance test case.
+    func testLoopPerformance () {
         var sum = 0
         self.measure {
             for number in input {
@@ -31,7 +30,6 @@ class TestReduceFunction: XCTestCase {
     }
 
     func testReducePerformance() {
-        // This is an example of a performance test case.
         self.measure {
             let sum = input.reduce(0, reduceSum)
             print(sum)

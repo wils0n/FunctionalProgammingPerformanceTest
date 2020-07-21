@@ -18,7 +18,7 @@ class TestFilterFunction: XCTestCase {
         ]
     }
     
-    func testLoopToFilterPerformance () {
+    func testLoopPerformance () {
         var evenNumbers = [Int]()
         self.measure {
             for number in input {
@@ -31,7 +31,6 @@ class TestFilterFunction: XCTestCase {
     }
     
     func testFilterPerformance () {
-        
         self.measure {
             let evenNumbers = input.filter(isEven)
             print(evenNumbers)
