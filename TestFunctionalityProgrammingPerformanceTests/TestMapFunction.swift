@@ -26,14 +26,12 @@ class TestFunctionalityProgrammingPerformanceTests: XCTestCase {
                 let newNumber = number * number
                 newNumbers.append(newNumber)
             }
-            print(newNumbers)
         }
     }
 
     func testMapPerformance() {
         self.measure {
             let newNumbers = input.map(square)
-            print(newNumbers)
         }
     }
     

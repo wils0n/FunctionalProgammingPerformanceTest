@@ -26,14 +26,12 @@ class TestFilterFunction: XCTestCase {
                     evenNumbers.append(number)
                 }
             }
-            print(evenNumbers)
         }
     }
     
     func testFilterPerformance () {
         self.measure {
             let evenNumbers = input.filter(isEven)
-            print(evenNumbers)
         }
     }
     

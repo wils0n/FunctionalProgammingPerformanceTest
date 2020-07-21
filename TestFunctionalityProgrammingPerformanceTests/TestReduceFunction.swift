@@ -25,14 +25,12 @@ class TestReduceFunction: XCTestCase {
             for number in input {
                 sum += number
             }
-            print(sum)
         }
     }
 
     func testReducePerformance() {
         self.measure {
             let sum = input.reduce(0, reduceSum)
-            print(sum)
         }
     }
 
